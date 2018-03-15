@@ -33,7 +33,7 @@ export function activate(context: vscode.ExtensionContext) {
                 vscode.window.showErrorMessage("Fail to load Json, please check your json string");
                 return null;
             }
-            h.loopObj("", obj, "", -1);
+            h.loopObj(obj);
             return JSON.stringify(h.entry);
 
 
